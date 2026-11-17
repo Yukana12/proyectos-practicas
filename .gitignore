@@ -1,0 +1,13 @@
+# Secretos: NUNCA se suben
+.env
+src/.env
+
+# Dependencias y logs
+src/vendor/
+src/node_modules/
+*.log
+
+# Editor y sistema
+.idea/
+.DS_Store
+Thumbs.db

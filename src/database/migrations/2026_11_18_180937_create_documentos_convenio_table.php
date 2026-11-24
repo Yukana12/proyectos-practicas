@@ -11,7 +11,7 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('documento_convenios', function (Blueprint $table) {
+        Schema::create('documentos_convenio', function (Blueprint $table) {
             $table->id();
             $table->unsignedInteger('version'); 
             $table->string('ruta_archivo'); 
@@ -34,6 +34,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('documento_convenios');
+        Schema::dropIfExists('documentos_convenio');
     }
 };

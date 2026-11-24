@@ -18,6 +18,9 @@ class Convenio extends Model
 
     protected $table = 'convenios'; 
 
+    protected $attributes = [
+        'estado' => 'borrador',
+    ];
 
     //Estado y motivo de recision quedan fuera a proposito:
     //Solo el sericio del convenio puede cambiarlos, respetando la maquina de estados.

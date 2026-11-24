@@ -31,7 +31,7 @@ enum EstadoConvenio: string
         }; 
     }
 
-    public function puedePasar(self $nuevo): bool{
+    public function puedePasarA(self $nuevo): bool{
         return in_array($nuevo, $this->transiciones(), true); 
     }
 }
